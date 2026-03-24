@@ -1,3 +1,7 @@
+use anansi_rust;
 fn main() {
-    println!("Hello, from Anansi-Rust");
+    anansi_rust::process_command_line_args();
+    anansi_rust::setup_simulation();
+    anansi_rust::run_simulation();
+    anansi_rust::cleanup_simulation();
 }
