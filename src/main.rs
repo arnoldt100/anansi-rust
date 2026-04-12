@@ -1,7 +1,11 @@
-use anansi_rust;
+mod command_line_options;
+mod setup_simulation;
+mod run_simulation;
+mod cleanup_simulation;
+
 fn main() {
-    anansi_rust::process_command_line_args();
-    anansi_rust::setup_simulation();
-    anansi_rust::run_simulation();
-    anansi_rust::cleanup_simulation();
+    command_line_options::process_command_line_args();
+    setup_simulation::create_md_simulation();
+    run_simulation::run_md_simulation();
+    cleanup_simulation::cleanup_md_simulation();
 }
