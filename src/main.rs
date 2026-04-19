@@ -6,7 +6,6 @@
 //!
 //! ## Examples
 
-
 mod command_line_options;
 use command_line_options::process_command_line_args;
 
@@ -20,7 +19,9 @@ mod cleanup_simulation;
 use cleanup_simulation::cleanup_md_simulation;
 
 fn main() {
-    process_command_line_args();
+    // Process command line arguments. This will typically involve 
+    // parsing the arguments and storing them in a struct for later,
+    let options = process_command_line_args();
     create_md_simulation();
     run_md_simulation();
     cleanup_md_simulation();
