@@ -8,7 +8,6 @@
 
 mod command_line_options;
 use command_line_options::process_command_line_args;
-use command_line_options::_COMMAND_FILE_HELP_TEXT;
 
 mod setup_simulation;
 use setup_simulation::create_md_simulation;
